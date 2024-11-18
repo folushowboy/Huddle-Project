@@ -1,0 +1,121 @@
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.first{
+    width: 50%;
+}
+.second{
+    width: 50%;
+}
+.parent{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    background:linear-gradient(0deg, rgba(228, 231, 255, 0.3), rgba(208, 214, 255, 0.3)), url("/huddle-landing-page-with-curved-sections-master/images/bg-section-bottom-desktop-1.svg");
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", sans-serif;
+}
+.nav, .hero{
+    width: 90%;
+    margin: auto;
+    max-width: 1440px;
+
+}
+.logo{
+    width: 100px;
+    object-fit: contain;
+}
+.btn{
+    background-color: white;
+    color: black;padding: 8px 20px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+.nav{
+    margin-bottom: 30px;
+}
+.text{
+    width: 95%;
+    font-size: 30px;
+}
+.paragraph{
+    width: 95%;
+    font-size: 16px;
+}
+.button{
+    background-color: deeppink;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    padding: 12px 35px;
+}
+.section2{
+    background-color: white;
+    display: flex;
+    padding: 50px;
+    padding-left: 70px;
+    align-items: center;
+    border-radius: 40px;
+
+}
+.parent2{
+    width: 90%;
+    margin: auto;
+    max-width: 1440px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.paragraph2{
+    width: 100%;
+    font-size: 15px;    
+}
+.flow{
+    width: 80%; 
+    float: right;
+}
+.flow2{
+    width: 80%;
+    float: left;
+}
+@media screen and (max-width: 600px) {
+    .hero{
+        flex-direction: column;
+    }
+    .first {
+        width: 100%;
+       
+    }
+    .first{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .second {
+        width: 100%;
+        padding: 30px;
+    }
+    .flow, .flow2{
+        width: 100%;
+        float: none;
+    }
+  /*  .firstbox{
+        margin-bottom: 0 !important;
+    }*/
+    .secondbox{
+        flex-direction: column-reverse !important;
+        padding: 30px !important;
+    }
+}
